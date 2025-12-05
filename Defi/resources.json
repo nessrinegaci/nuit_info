@@ -1,0 +1,220 @@
+{
+  "resources": {
+    "enseignants": [
+      {
+        "title": "Guide de migration vers LibreOffice",
+        "description": "Manuel complet pour abandonner Microsoft Office",
+        "type": "guide",
+        "url": "#",
+        "tags": ["bureautique", "libre", "migration"]
+      },
+      {
+        "title": "Activités pédagogiques sur l'obsolescence",
+        "description": "Séquences clés en main sur l'obsolescence programmée",
+        "type": "activité",
+        "url": "#",
+        "tags": ["pédagogie", "obsolescence", "écologie"]
+      },
+      {
+        "title": "Ressources Framasoft Éducation",
+        "description": "Outils libres adaptés à l'enseignement",
+        "type": "ressource",
+        "url": "https://framasoft.org",
+        "tags": ["outils", "libre", "éducation"]
+      }
+    ],
+    "techniciens": [
+      {
+        "title": "Script de migration automatique Ubuntu",
+        "description": "Automatisation complète de l'installation Linux",
+        "type": "script",
+        "url": "#",
+        "tags": ["linux", "automatisation", "ubuntu"]
+      },
+      {
+        "title": "Guide reconditionnement PC scolaire",
+        "description": "Procédure complète de remise en état",
+        "type": "guide",
+        "url": "#",
+        "tags": ["reconditionnement", "matériel", "écologie"]
+      },
+      {
+        "title": "Configuration serveur Yunohost éducatif",
+        "description": "Serveur auto-hébergé pour établissement",
+        "type": "tutoriel",
+        "url": "#",
+        "tags": ["serveur", "auto-hébergement", "yunohost"]
+      }
+    ],
+    "collectivites": [
+      {
+        "title": "Étude économique migration Linux dans l'Aude",
+        "description": "Retour d'expérience chiffré sur 3 ans",
+        "type": "étude",
+        "url": "#",
+        "tags": ["économie", "retour-expérience", "linux"]
+      },
+      {
+        "title": "Cadre juridique du logiciel libre en éducation",
+        "description": "Aspects légaux et réglementaires",
+        "type": "juridique",
+        "url": "#",
+        "tags": ["juridique", "libre", "réglementation"]
+      },
+      {
+        "title": "Arguments pour convaincre les décideurs",
+        "description": "Kit de communication NIRD pour élus",
+        "type": "communication",
+        "url": "#",
+        "tags": ["communication", "décideurs", "arguments"]
+      }
+    ]
+  },
+  "outils_libres": {
+    "bureautique": [
+      {
+        "nom": "LibreOffice",
+        "description": "Suite bureautique complète",
+        "avantages": ["Gratuit", "Compatible Office", "Multiplateforme"],
+        "url": "https://libreoffice.org"
+      },
+      {
+        "nom": "OnlyOffice",
+        "description": "Suite collaborative en ligne",
+        "avantages": ["Interface moderne", "Collaboration temps réel", "Cloud privé"],
+        "url": "https://onlyoffice.com"
+      }
+    ],
+    "systeme": [
+      {
+        "nom": "Ubuntu LTS",
+        "description": "Distribution Linux éducative",
+        "avantages": ["Support long terme", "Grande communauté", "Stable"],
+        "url": "https://ubuntu.com"
+      },
+      {
+        "nom": "Debian Edu",
+        "description": "Distribution spécialisée éducation",
+        "avantages": ["Spécialisé éducation", "Très stable", "Serveur intégré"],
+        "url": "https://debian.org/devel/debian-edu"
+      }
+    ],
+    "multimedia": [
+      {
+        "nom": "GIMP",
+        "description": "Éditeur d'images professionnel",
+        "avantages": ["Puissant", "Gratuit", "Extensible"],
+        "url": "https://gimp.org"
+      },
+      {
+        "nom": "Audacity",
+        "description": "Éditeur audio multiplateforme",
+        "avantages": ["Simple", "Efficace", "Formats multiples"],
+        "url": "https://audacityteam.org"
+      }
+    ]
+  },
+  "temoignages": [
+    {
+      "nom": "Collège Jean Moulin, Toulouse",
+      "type": "collège",
+      "citation": "Grâce à NIRD, nous avons économisé 15000€ par an et donné une seconde vie à 50 ordinateurs !",
+      "resultats": {
+        "economie": "15000€/an",
+        "materiel_sauve": "50 PC",
+        "autonomie": "85%"
+      }
+    },
+    {
+      "nom": "École primaire Les Tilleuls, Lyon",
+      "type": "primaire", 
+      "citation": "Les enfants adorent découvrir Linux et comprendre l'alternative aux géants du numérique.",
+      "resultats": {
+        "economie": "3000€/an",
+        "materiel_sauve": "15 PC",
+        "autonomie": "70%"
+      }
+    },
+    {
+      "nom": "Lycée Technique de Bretagne",
+      "type": "lycée",
+      "citation": "Former nos élèves aux outils libres, c'est leur donner les clés de leur autonomie numérique.",
+      "resultats": {
+        "economie": "25000€/an",
+        "materiel_sauve": "120 PC",
+        "autonomie": "95%"
+      }
+    }
+  ],
+  "defis_nird": [
+    {
+      "titre": "Défi 30 jours Linux",
+      "description": "Utilisez exclusivement Linux pendant 30 jours",
+      "niveau": "débutant",
+      "recompense": "Badge Explorateur Linux"
+    },
+    {
+      "titre": "Sauvetage PC Challenge",
+      "description": "Reconditionnez 5 ordinateurs avec Linux",
+      "niveau": "intermédiaire", 
+      "recompense": "Badge Sauveur de Matériel"
+    },
+    {
+      "titre": "École 100% Libre",
+      "description": "Migrez complètement un établissement vers le libre",
+      "niveau": "expert",
+      "recompense": "Badge Champion NIRD"
+    }
+  ],
+  "stats_impact": {
+    "global": {
+      "co2_evite": "2.5 tonnes par école/an",
+      "economie_moyenne": "12000€ par établissement",
+      "pc_sauves": "45 par école en moyenne"
+    },
+    "par_eleve": {
+      "cout_annuel_proprie": "150€",
+      "cout_annuel_libre": "25€",
+      "economie": "125€/élève/an"
+    }
+  },
+  "alternatives": {
+    "google_workspace": {
+      "nom": "Nextcloud + OnlyOffice",
+      "description": "Suite collaborative auto-hébergée",
+      "avantages": ["Données en Europe", "Pas d'abonnement", "Contrôle total"]
+    },
+    "microsoft_365": {
+      "nom": "LibreOffice + Collabora",
+      "description": "Bureautique libre collaborative", 
+      "avantages": ["Gratuit", "Compatible", "Pas de vendor lock-in"]
+    },
+    "adobe_creative": {
+      "nom": "GIMP + Inkscape + Scribus",
+      "description": "Suite créative libre complète",
+      "avantages": ["Gratuit", "Professionnel", "Communauté active"]
+    }
+  },
+  "formation": {
+    "modules": [
+      {
+        "titre": "Découverte de Linux",
+        "duree": "2h",
+        "public": "tous",
+        "objectifs": ["Installation", "Interface", "Applications de base"]
+      },
+      {
+        "titre": "LibreOffice avancé", 
+        "duree": "6h",
+        "public": "enseignants",
+        "objectifs": ["Maîtrise complète", "Macros", "Collaboration"]
+      },
+      {
+        "titre": "Administration système libre",
+        "duree": "20h",
+        "public": "techniciens", 
+        "objectifs": ["Serveurs", "Réseau", "Sécurité"]
+      }
+    ]
+  }
+}

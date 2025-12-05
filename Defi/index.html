@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Village Numérique Résistant - NIRD</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loading-screen" class="loading-screen">
+        <div class="village-loading">
+            <h2>Construction du Village NIRD...</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>🏘️ Village NIRD</h1>
+                <span class="tagline">Numérique Inclusif, Responsable & Durable</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Accueil</a></li>
+                <li><a href="#decouvrir" class="nav-link">Découvrir</a></li>
+                <li><a href="#simulateur" class="nav-link">Simulateur</a></li>
+                <li><a href="#quiz" class="nav-link">Quiz</a></li>
+                <li><a href="#communaute" class="nav-link">Communauté</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section Accueil Hero -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Bienvenue au Village Numérique Résistant !</h1>
+                <p class="hero-subtitle">Libérez votre école de l'emprise des géants du numérique</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="startAdventure()">🚀 Commencer l'aventure</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('decouvrir')">📖 Découvrir NIRD</button>
+                </div>
+            </div>
+            <div class="hero-village">
+                <div class="village-scene">
+                    <div class="building school" title="École Traditionnelle">🏫</div>
+                    <div class="building house" title="Familles">🏠</div>
+                    <div class="building tech" title="Centre Tech Libre">🏗️</div>
+                    <div class="character asterix" title="Champion NIRD">🧙‍♂️</div>
+                    <div class="threat goliath" title="Big Tech">👹</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Découvrir -->
+        <section id="decouvrir" class="discover-section">
+            <div class="container">
+                <h2 class="section-title">🎯 La Mission NIRD</h2>
+                <div class="mission-grid">
+                    <div class="mission-card probleme">
+                        <h3>😰 Le Problème</h3>
+                        <ul>
+                            <li>Windows 10 obsolète → matériel gaspillé</li>
+                            <li>Abonnements coûteux (Office, Google...)</li>
+                            <li>Données hébergées hors UE</li>
+                            <li>Dépendance totale aux Big Tech</li>
+                        </ul>
+                        <div class="threat-meter">
+                            <span>Niveau de menace:</span>
+                            <div class="meter high"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mission-card solution">
+                        <h3>✨ La Solution NIRD</h3>
+                        <div class="nird-pillars">
+                            <div class="pillar">
+                                <span class="pillar-icon">🌱</span>
+                                <h4>Inclusif</h4>
+                                <p>Accessible à tous</p>
+                            </div>
+                            <div class="pillar">
+                                <span class="pillar-icon">⚖️</span>
+                                <h4>Responsable</h4>
+                                <p>Éthique & transparent</p>
+                            </div>
+                            <div class="pillar">
+                                <span class="pillar-icon">🌍</span>
+                                <h4>Durable</h4>
+                                <p>Écologique & pérenne</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transformation-showcase">
+                    <h3>🔄 Transformation d'une École</h3>
+                    <div class="before-after">
+                        <div class="before">
+                            <h4>Avant (École Dépendante)</h4>
+                            <div class="school-state">
+                                <div class="issue">💰 Licences coûteuses</div>
+                                <div class="issue">🔒 Systèmes fermés</div>
+                                <div class="issue">🗑️ Obsolescence forcée</div>
+                                <div class="issue">📡 Données externalisées</div>
+                            </div>
+                        </div>
+                        <div class="transformation-arrow">➡️</div>
+                        <div class="after">
+                            <h4>Après (Village NIRD)</h4>
+                            <div class="school-state">
+                                <div class="benefit">🆓 Logiciels libres</div>
+                                <div class="benefit">🔓 Systèmes ouverts</div>
+                                <div class="benefit">♻️ Réemploi du matériel</div>
+                                <div class="benefit">🛡️ Souveraineté des données</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Simulateur -->
+        <section id="simulateur" class="simulator-section">
+            <div class="container">
+                <h2 class="section-title">🎮 Simulateur de Transformation</h2>
+                <p class="section-subtitle">Transformez votre école en Village Numérique Résistant !</p>
+                
+                <div class="simulator-game">
+                    <div class="school-dashboard">
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat-label">Autonomie</span>
+                                <div class="progress-bar">
+                                    <div class="progress" id="autonomy-progress" style="width: 20%"></div>
+                                </div>
+                                <span class="stat-value" id="autonomy-value">20%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Économies</span>
+                                <span class="stat-value" id="savings-value">0€</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Écologie</span>
+                                <div class="eco-meter" id="eco-meter">🌱</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="actions-panel">
+                        <h3>Actions disponibles :</h3>
+                        <div class="action-buttons">
+                            <button class="action-btn" onclick="performAction('linux')" data-cost="100">
+                                🐧 Migrer vers Linux
+                                <span class="cost">(-100€, +30% autonomie)</span>
+                            </button>
+                            <button class="action-btn" onclick="performAction('libreoffice')" data-cost="0">
+                                📄 Installer LibreOffice
+                                <span class="cost">(Gratuit, +10% autonomie)</span>
+                            </button>
+                            <button class="action-btn" onclick="performAction('recycle')" data-cost="50">
+                                ♻️ Reconditionnement PC
+                                <span class="cost">(-50€, +15% autonomie, 🌱)</span>
+                            </button>
+                            <button class="action-btn" onclick="performAction('formation')" data-cost="200">
+                                👥 Former les équipes
+                                <span class="cost">(-200€, +20% autonomie)</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="school-visual">
+                        <div class="school-building" id="school-building">
+                            <div class="building-level" data-level="0">🏫</div>
+                            <div class="upgrades" id="upgrades-container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Quiz -->
+        <section id="quiz" class="quiz-section">
+            <div class="container">
+                <h2 class="section-title">🧠 Quiz du Résistant NIRD</h2>
+                <div class="quiz-container">
+                    <div class="quiz-progress">
+                        <div class="progress-bar">
+                            <div class="progress" id="quiz-progress"></div>
+                        </div>
+                        <span class="progress-text" id="quiz-progress-text">Question 1/5</span>
+                    </div>
+                    
+                    <div class="quiz-content">
+                        <h3 id="quiz-question" class="quiz-question"></h3>
+                        <div id="quiz-options" class="quiz-options"></div>
+                        <button id="quiz-next" class="btn btn-primary" onclick="nextQuestion()" style="display: none;">Question suivante</button>
+                    </div>
+
+                    <div class="quiz-score" id="quiz-score" style="display: none;">
+                        <h3>🎉 Résultats</h3>
+                        <p id="score-text"></p>
+                        <div id="resistance-level"></div>
+                        <button class="btn btn-secondary" onclick="restartQuiz()">Recommencer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Communauté -->
+        <section id="communaute" class="community-section">
+            <div class="container">
+                <h2 class="section-title">🤝 Rejoignez la Résistance</h2>
+                
+                <div class="community-grid">
+                    <div class="community-card">
+                        <h3>👩‍🏫 Enseignants</h3>
+                        <p>Partagez vos expériences, trouvez des ressources pédagogiques libres</p>
+                        <div class="resources">
+                            <a href="#" class="resource-link">📚 Guides pédagogiques</a>
+                            <a href="#" class="resource-link">🔧 Outils pratiques</a>
+                        </div>
+                    </div>
+                    
+                    <div class="community-card">
+                        <h3>👨‍💻 Techniciens</h3>
+                        <p>Tutoriels techniques, scripts d'automatisation, retours d'expérience</p>
+                        <div class="resources">
+                            <a href="#" class="resource-link">⚙️ Scripts Linux</a>
+                            <a href="#" class="resource-link">📋 Procédures migration</a>
+                        </div>
+                    </div>
+                    
+                    <div class="community-card">
+                        <h3>🏛️ Collectivités</h3>
+                        <p>Études de cas, arguments économiques, cadres juridiques</p>
+                        <div class="resources">
+                            <a href="#" class="resource-link">💰 Études économiques</a>
+                            <a href="#" class="resource-link">⚖️ Aspects légaux</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contribution-panel">
+                    <h3>💡 Contribuer au Village</h3>
+                    <div class="contribution-options">
+                        <button class="contrib-btn" onclick="openModal('share-experience')">
+                            📝 Partager mon expérience
+                        </button>
+                        <button class="contrib-btn" onclick="openModal('add-resource')">
+                            📤 Ajouter une ressource
+                        </button>
+                        <button class="contrib-btn" onclick="openModal('suggest-feature')">
+                            💭 Suggérer une amélioration
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Section Évaluation Établissement -->
+<section id="evaluation" class="evaluation-section">
+  <div class="container">
+    <h2 class="section-title">📊 Évaluation Établissement</h2>
+    <p class="section-subtitle">Auto-évalue ton établissement pour rejoindre la communauté NIRD</p>
+    
+    <div class="evaluation-form-container">
+      <form id="ee-form" class="evaluation-form">
+        <!-- Nom établissement -->
+        <div class="form-group">
+          <label for="nom-etab">Nom de l'établissement *</label>
+          <input type="text" id="nom-etab" name="nomEtablissement" required placeholder="Ex: Lycée Astérix de Résistance">
+        </div>
+
+        <!-- Type établissement -->
+        <div class="form-group">
+          <label for="type-etab">Type d'établissement *</label>
+          <select id="type-etab" name="typeEtablissement" required>
+            <option value="">Choisir...</option>
+            <option value="Lycée">Lycée</option>
+            <option value="Collège">Collège</option>
+            <option value="École primaire">École primaire</option>
+            <option value="CFA">CFA</option>
+            <option value="Autre">Autre</option>
+          </select>
+        </div>
+
+        <!-- Nombre machines + OS -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nb-machines">Nb ordinateurs</label>
+            <input type="number" id="nb-machines" name="nbMachines" placeholder="Ex: 150">
+          </div>
+          <div class="form-group">
+            <label for="os-principal">OS principal</label>
+            <select id="os-principal" name="osPrincipal">
+              <option value="">Choisir...</option>
+              <option value="Windows 10">Windows 10</option>
+              <option value="Windows 11">Windows 11</option>
+              <option value="Linux">Linux</option>
+              <option value="MacOS">MacOS</option>
+              <option value="Mixte">Mixte</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Dépendance Big Tech -->
+        <div class="form-group">
+          <label for="dependance">Dépendance Big Tech *</label>
+          <select id="dependance" name="dependanceBigTech" required>
+            <option value="">Évaluer...</option>
+            <option value="Très forte">Très forte</option>
+            <option value="Forte">Forte</option>
+            <option value="Modérée">Modérée</option>
+            <option value="Faible">Faible</option>
+            <option value="Aucune">Aucune</option>
+          </select>
+        </div>
+
+        <!-- Actions prévues -->
+        <div class="form-group">
+          <label for="actions">Actions NIRD prévues</label>
+          <textarea id="actions" name="actionsPrevues" rows="3" placeholder="Ex: Test Linux sur 10 PC, Formation équipe technique..."></textarea>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Contact (facultatif)</label>
+          <input type="email" id="email" name="emailContact" placeholder="contact@etablissement.fr">
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-large">
+          🚀 Rejoindre la communauté NIRD
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>🏘️ Le Village NIRD</h4>
+                    <p>Projet open-source sous licence libre</p>
+                    <p>Créé avec ❤️ pour l'éducation libre</p>
+                </div>
+                <div class="footer-section">
+                    <h4>🔗 Liens utiles</h4>
+                    <ul>
+                        <li><a href="#">Documentation NIRD</a></li>
+                        <li><a href="#">Code source</a></li>
+                        <li><a href="#">Contribuer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>📞 Contact</h4>
+                    <p>communaute@village-nird.org</p>
+                    <div class="social-links">
+                        <a href="#" title="Forum">💬</a>
+                        <a href="#" title="Git">🔧</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal-overlay" class="modal-overlay" onclick="closeModal()">
+        <div class="modal" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h3 id="modal-title"></h3>
+                <button class="modal-close" onclick="closeModal()">✕</button>
+            </div>
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

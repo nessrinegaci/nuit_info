@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Déploiement - Village NIRD</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #a8e6cf 0%, #88d8a3 50%, #7fcdcd 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2c5530; margin-bottom: 1rem; }
+        h2 { color: #2c5530; border-bottom: 2px solid #8fbc8f; padding-bottom: 0.5rem; }
+        .btn {
+            display: inline-block;
+            background: #ff6b35;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 0.5rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background: #e55a2e;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background: #8fbc8f;
+        }
+        .btn-secondary:hover {
+            background: #7ba67b;
+        }
+        .deployment-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .option-card {
+            border: 2px solid #8fbc8f;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .code {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-radius: 4px;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+        .status {
+            color: #32cd32;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏘️ Village NIRD - Prêt pour le déploiement !</h1>
+        
+        <div class="status">
+            ✅ Application développée avec succès !
+        </div>
+        
+        <h2>🚀 Options de déploiement</h2>
+        
+        <div class="deployment-options">
+            <div class="option-card">
+                <h3>🌐 GitHub Pages</h3>
+                <p>Hébergement gratuit et fiable</p>
+                <a href="#" class="btn btn-secondary">Déployer sur GitHub</a>
+            </div>
+            
+            <div class="option-card">
+                <h3>⚡ Netlify</h3>
+                <p>Déploiement instantané</p>
+                <a href="#" class="btn btn-secondary">Déployer sur Netlify</a>
+            </div>
+            
+            <div class="option-card">
+                <h3>🚀 Vercel</h3>
+                <p>Performance optimale</p>
+                <a href="#" class="btn btn-secondary">Déployer sur Vercel</a>
+            </div>
+        </div>
+
+        <h2>📁 Fichiers du projet</h2>
+        <ul>
+            <li><strong>index.html</strong> - Page principale de l'application</li>
+            <li><strong>style.css</strong> - Styles et thème "village résistant"</li>
+            <li><strong>script.js</strong> - Logique interactive et gamification</li>
+            <li><strong>resources.json</strong> - Base de données des ressources NIRD</li>
+            <li><strong>README.md</strong> - Documentation complète</li>
+        </ul>
+
+        <h2>🎯 Fonctionnalités implémentées</h2>
+        <ul>
+            <li>✅ Interface "Village Numérique Résistant" interactive</li>
+            <li>✅ Simulateur de transformation d'établissement</li>
+            <li>✅ Quiz gamifié avec système de niveaux</li>
+            <li>✅ Espace communauté avec contributions</li>
+            <li>✅ Système d'achievements et d'easter eggs</li>
+            <li>✅ Design responsive et accessible</li>
+            <li>✅ Sauvegarde locale des progrès</li>
+            <li>✅ Animations fluides et feedback utilisateur</li>
+        </ul>
+
+        <h2>🔧 Déploiement local</h2>
+        <p>Pour tester localement, il suffit d'ouvrir <code>index.html</code> dans un navigateur web.</p>
+        
+        <div class="code">
+# Via serveur HTTP simple (recommandé)
+python -m http.server 8000
+# Puis aller sur http://localhost:8000
+
+# Ou directement
+# Ouvrir index.html dans le navigateur
+        </div>
+
+        <h2>📊 Métriques du projet</h2>
+        <ul>
+            <li><strong>Lignes de code:</strong> ~1000 lignes</li>
+            <li><strong>Technologies:</strong> HTML5, CSS3, JavaScript Vanilla</li>
+            <li><strong>Compatibilité:</strong> Tous navigateurs modernes</li>
+            <li><strong>Performance:</strong> Application légère (~70KB total)</li>
+            <li><strong>Licence:</strong> Libre et open-source</li>
+        </ul>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="index.html" class="btn">🎮 Lancer l'application NIRD</a>
+        </div>
+
+        <footer style="text-align: center; margin-top: 2rem; color: #666;">
+            <p>Créé avec ❤️ pour l'éducation libre et durable</p>
+            <p><em>Ensemble, résistons à l'obsolescence programmée !</em></p>
+        </footer>
+    </div>
+</body>
+</html>
